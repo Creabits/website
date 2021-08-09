@@ -1,0 +1,38 @@
+// all the breakpoints for a responsive design
+// to add another width use the following references 
+// xs - for very small 
+// s - for small
+// m - for medium
+// xl - for extra large
+// xxl - for extra extra large
+
+// breakpoint from 300px width screen to 599px
+@mixin movil-s {
+    @media only screen and (min-width: 300px) {
+        @content;
+    }
+}
+// breakpoint from 600px width screen to 767px
+@mixin movil {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+// breakpoint from 768px width screen to 1439px
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+// breakpoint from 1440px width screen to 2559px
+@mixin desktop {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+// breakpoint from 2560px width screen to infinite
+@mixin desktop-xl {
+    @media only screen and (min-width: 2560px) {
+        @content;
+    }
+}
