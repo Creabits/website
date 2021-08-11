@@ -1,6 +1,7 @@
 // apply a natural box layout model to all elements, but allowing components to change
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -12,19 +13,71 @@ html {
 @import "./variables";
 
 body {
+    background-image:#d7d7d7;
+    background-image:
+    radial-gradient(at 51% 49%, hsla(0,0%,72%,1) 0, transparent 49%),
+    radial-gradient(at 42% 94%, hsla(0,0%,42%,1) 0, transparent 55%),
+    radial-gradient(at 4% 95%, hsla(0,0%,70%,1) 0, transparent 77%),
+    radial-gradient(at 83% 88%, hsla(0,0%,57%,1) 0, transparent 31%),
+    radial-gradient(at 0% 0%, hsla(0,0%,32%,1) 0, transparent 67%),
+    radial-gradient(at 76% 0%, hsla(0,0%,48%,1) 0, transparent 58%);
     margin: 0;
     padding: 0;
-    font-family: $primary-font;
+    font-family: $secondary-font;
+    font-size: 2em;
     h1 {
+        font-family: $primary-font;
+        font-weight: 700;
         font-size: 4em;
         margin: 0;
     }
 }
 
-.container {
+.container {    
     display: grid;
     place-content: center center;
     text-align: center;
-    height: 100vh;
     padding: 5vw;
+    height: 100vh;
+    
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    &__glass{      
+        position: absolute;        
+        box-shadow: 0 8px 32px 0 rgba(99, 99, 99, 0.05);
+        //padding: 5rem;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 1.5rem;
+        overflow: hidden;
+        &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        pointer-events: none;
+        transform: skewX(320deg);
+        }
+        
+    }
+    h1 {
+        color: $grayscale-700;
+        span {
+            color: $greeny-2;        
+            filter: drop-shadow(0px 0px 8px $greeny-1)
+        }
+    }
+    p{
+        color: $grayscale-800;
+        span {
+            color: $greeny-2;
+        }
+    }
 }
