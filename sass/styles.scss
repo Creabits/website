@@ -11,6 +11,7 @@ html {
 }
 
 @import "./variables";
+// @import "./breakpoints";
 
 body {
     background-image:#d7d7d7;
@@ -24,11 +25,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: $secondary-font;
-    font-size: calc(1vw + 1rem);
+    font-size: $default-font-size;
     h1 {
         font-family: $primary-font;
         font-weight: 700;
-        font-size: calc(1vw + 6.5rem);
+        font-size: $font-size-h1;
         margin: 0;
     }
     p {
@@ -78,7 +79,7 @@ body {
             filter: drop-shadow(0px 0px 8px $greeny-1)
         }
     }
-    p{
+    p {
         color: $grayscale-800;
         span {
             color: $greeny-2;
