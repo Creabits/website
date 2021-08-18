@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +12,182 @@
     <!-- Adding our fonts style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">       
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap"
+        rel="stylesheet">
     <title>Creabits</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card__glass">
-                <h1>Crea<span>bits</span></h1>
-                <p>We have a project in our minds, but we'll do it one <span><strong>bit</strong></span> at a time</p>
+    <!-- navbar -->
+    <header class="navbar">
+        <div>
+            <h1>Crea<span class="navbar__title--verde">bits</span></h1>
+        </div>
+        <div>
+            <p>0 <b>bits</b> de información</p>
+        </div>
+    </header>
+    <!-- end navbar -->
+
+    <main>
+        <!-- open first block: 4 bits -->
+        <div class="container__bits">
+            <div class="bits--slot-1">
+                <p>0</p>
+            </div>
+            <div class="bits--slot-2">
+                <p class="bit-on">1</p>
+                <p class="bits--quote">"</p>
+                <p>
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione delectus odio alias cumque
+                    nemo
+                    placeat ex quos numquam est enim recusandae blanditiis quasi, provident explicabo quidem voluptatem
+                    quam neque."
+                </p>
+                <p>&ndash; Lorem ipsum, 1924</p>
+            </div>
+            <div class="bits--slot-3">
+                <p>0</p>
+            </div>
+            <div class="bits--slot-4">
+                <p>0</p>
             </div>
         </div>
-    </div>
+        <!-- end first block: 4 bits -->
+
+        <!-- open second block: intro -->
+        <div class="container">
+            <div>
+                <h2>Lorem ipsum dolor </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis odio et semper ultricies.
+                    Nunc bibendum, lectus ut suscipit auctor, quam odio convallis sapien, quis pharetra ex nulla ut
+                    lorem. Aenean pretium dapibus velit sollicitudin cursus. Morbi lacinia, mi a facilisis tempor, massa
+                    nisl pellentesque ligula, eget dapibus lacus ligula in tortor. Suspendisse potenti. Nam ac bibendum
+                    ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="container__description">
+                    <div>
+                        <p>
+                            <span class="bit-number">0</span>
+                            <span class="bit-unit">bits</span>
+                        </p>
+                        <p class="bit-description">de información</p>
+                    </div>
+                    <div>
+                        <div class="container__button">
+                            <a href="#">
+                                <div class="button-inner">
+                                    Ver más
+                                </div>
+                            </a>
+                            <div class="button-inner--dash"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/placeholder-image.png" alt="placeholder" width="550px" height="550px">
+            </div>
+        </div>
+        <!-- end second block: intro -->
+
+        <!-- open third block: cards -->
+        <div class="container__cards">
+            <div class="card-1">
+                <div class="card--inner">                    
+                    <!-- <a href="#"> -->
+                        <h3>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h3>
+                        <div class="card--info">
+                            <div>
+                                <p class="card-date">Published - 5 minutes ago</p>
+                            </div>
+                            <div>
+                                <p class="card-category">Categoría</p>
+                            </div>
+                        </div>
+                        <img src="images/placeholder-image.png" alt="placeholder" width="300px" height="300px">
+                        <div class="container__engagement">
+                            <div>
+                                <p class="like">like</p>
+                            </div>
+                            <div>
+                                <p class="comment">comments</p>
+                            </div>
+                            <div>
+                                <p class="share">share</p>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="card--border"></div>
+            </div>
+            <div class="card-2">
+                <div class="card--inner">
+                    <h3>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h3>
+                    <div class="card--info">
+                        <div>
+                            <p class="card-date">Published - 5 minutes ago</p>
+                        </div>
+                        <div>
+                            <p class="card-category">Categoría</p>
+                        </div>
+                    </div>
+                    <img src="images/placeholder-image.png" alt="placeholder" width="300px" height="300px">
+                    <div class="container__engagement">
+                        <div>
+                            <p class="like">like</p>
+                        </div>
+                        <div>
+                            <p class="comment">comments</p>
+                        </div>
+                        <div>
+                            <p class="share">share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card--border"></div>
+            </div>
+            <div class="card-3">
+                <div class="card--inner">
+                    <h3>Lorem ipsum dolor sit amet, consecte adipiscing elit.</h3>
+                    <div class="card--info">
+                        <div>
+                            <p class="card-date">Published - 5 minutes ago</p>
+                        </div>
+                        <div>
+                            <p class="card-category">Categoría</p>
+                        </div>
+                    </div>
+                    <img src="images/placeholder-image.png" alt="placeholder" width="300px" height="300px">
+                    <div class="container__engagement">
+                        <div>
+                            <p class="like">like</p>
+                        </div>
+                        <div>
+                            <p class="comment">comments</p>
+                        </div>
+                        <div>
+                            <p class="share">share</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card--border"></div>
+            </div>
+        </div>
+        <!-- end third block: cards -->
+    </main>
+    <footer class="container__footer">
+        <div>
+            <a href="#">Aviso legal &middot; Política de privacidad y coookies</a>
+        </div>
+        <div class="container__rrss">
+            <div>IG</div>
+            <div>T</div>
+            <div>F</div>
+        </div>
+    </footer>
 </body>
+
 </html>
